@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HHB-lW-K4B">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--FavouriteVC-->
+        <scene sceneID="eFf-0w-TXV">
+            <objects>
+                <viewController id="HHB-lW-K4B" customClass="FavouriteVC" customModule="Giphy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LjA-SD-enq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYV-vP-V1B">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XB3-Cu-mxY" customClass="NavigationBarContainer" customModule="Giphy" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="t5h-Q3-MOC"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gdX-cJ-Ndb">
+                                <rect key="frame" x="8" y="98" width="398" height="798"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="T7s-MT-4cz">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="HHB-lW-K4B" id="LdB-gY-zyA"/>
+                                    <outlet property="delegate" destination="HHB-lW-K4B" id="huQ-Ba-gZM"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xh-n6-ydt">
+                                <rect key="frame" x="8" y="98" width="398" height="633"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You don’t have any Favourite Giphies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOU-Oy-lLh">
+                                        <rect key="frame" x="74.333333333333329" y="110" width="249.33333333333337" height="18"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                                        <color key="textColor" name="lightGrey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgNoFavouriteGiphy" translatesAutoresizingMaskIntoConstraints="NO" id="1yq-fs-Hr6">
+                                        <rect key="frame" x="0.0" y="142" width="398" height="491"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="1yq-fs-Hr6" secondAttribute="height" multiplier="398:491" id="yq2-ld-2q0"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1yq-fs-Hr6" secondAttribute="bottom" id="H80-tu-DDp"/>
+                                    <constraint firstItem="DOU-Oy-lLh" firstAttribute="centerX" secondItem="9xh-n6-ydt" secondAttribute="centerX" id="IG0-cB-Mym"/>
+                                    <constraint firstItem="1yq-fs-Hr6" firstAttribute="top" secondItem="DOU-Oy-lLh" secondAttribute="bottom" constant="14" id="MSa-Ve-jLF"/>
+                                    <constraint firstItem="1yq-fs-Hr6" firstAttribute="centerX" secondItem="DOU-Oy-lLh" secondAttribute="centerX" id="Ydc-P1-V2B"/>
+                                    <constraint firstItem="DOU-Oy-lLh" firstAttribute="top" secondItem="9xh-n6-ydt" secondAttribute="top" constant="110" id="fHv-M4-j5B"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sgy-Pa-uQ6"/>
+                        <color key="backgroundColor" name="black"/>
+                        <constraints>
+                            <constraint firstItem="XB3-Cu-mxY" firstAttribute="leading" secondItem="TYV-vP-V1B" secondAttribute="leading" id="9Ua-Iq-flR"/>
+                            <constraint firstItem="XB3-Cu-mxY" firstAttribute="top" secondItem="Sgy-Pa-uQ6" secondAttribute="top" id="ENR-df-96t"/>
+                            <constraint firstItem="9xh-n6-ydt" firstAttribute="top" secondItem="gdX-cJ-Ndb" secondAttribute="top" id="Emy-ZD-h9c"/>
+                            <constraint firstItem="XB3-Cu-mxY" firstAttribute="trailing" secondItem="TYV-vP-V1B" secondAttribute="trailing" id="FsR-jP-VHP"/>
+                            <constraint firstItem="TYV-vP-V1B" firstAttribute="top" secondItem="LjA-SD-enq" secondAttribute="top" id="GCw-3m-4EF"/>
+                            <constraint firstItem="9xh-n6-ydt" firstAttribute="trailing" secondItem="gdX-cJ-Ndb" secondAttribute="trailing" id="Q0g-hl-PMg"/>
+                            <constraint firstItem="gdX-cJ-Ndb" firstAttribute="leading" secondItem="XB3-Cu-mxY" secondAttribute="leading" constant="8" id="T9K-cH-JUP"/>
+                            <constraint firstItem="TYV-vP-V1B" firstAttribute="leading" secondItem="LjA-SD-enq" secondAttribute="leading" id="Y2G-Kr-vb0"/>
+                            <constraint firstItem="gdX-cJ-Ndb" firstAttribute="top" secondItem="XB3-Cu-mxY" secondAttribute="bottom" constant="10" id="Yiq-je-7a9"/>
+                            <constraint firstItem="1yq-fs-Hr6" firstAttribute="height" secondItem="LjA-SD-enq" secondAttribute="height" multiplier="0.547991" id="dnT-3l-wEu"/>
+                            <constraint firstItem="9xh-n6-ydt" firstAttribute="leading" secondItem="gdX-cJ-Ndb" secondAttribute="leading" id="gFJ-Lr-Mdk"/>
+                            <constraint firstAttribute="bottom" secondItem="gdX-cJ-Ndb" secondAttribute="bottom" id="jxH-ys-ikE"/>
+                            <constraint firstItem="XB3-Cu-mxY" firstAttribute="top" secondItem="TYV-vP-V1B" secondAttribute="bottom" id="pUj-hy-uDE"/>
+                            <constraint firstItem="gdX-cJ-Ndb" firstAttribute="trailing" secondItem="XB3-Cu-mxY" secondAttribute="trailing" constant="-8" id="rzS-Ek-Utw"/>
+                            <constraint firstAttribute="trailing" secondItem="TYV-vP-V1B" secondAttribute="trailing" id="t0g-dw-4Jd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="gdX-cJ-Ndb" id="Yrj-cv-NiY"/>
+                        <outlet property="imgVwNoGiphy" destination="1yq-fs-Hr6" id="oq8-Kb-6rE"/>
+                        <outlet property="lblNoGiphy" destination="DOU-Oy-lLh" id="WCb-1V-oiX"/>
+                        <outlet property="viewNavigationBar" destination="XB3-Cu-mxY" id="gvP-v1-EFw"/>
+                        <outlet property="viewNoGiphyContainer" destination="9xh-n6-ydt" id="dnH-qj-d5G"/>
+                        <outlet property="viewTopLayoutMargin" destination="TYV-vP-V1B" id="bTJ-nc-VIX"/>
+                        <outletCollection property="verticalConstraints" destination="fHv-M4-j5B" collectionClass="NSMutableArray" id="wyt-h7-aeZ"/>
+                        <outletCollection property="verticalConstraints" destination="MSa-Ve-jLF" collectionClass="NSMutableArray" id="Wzr-DP-ffv"/>
+                        <segue destination="a7T-Xu-0bZ" kind="presentation" identifier="segueDetails" id="U7L-xk-Guf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rw9-LV-A2d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="56"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="1Fe-IL-lGs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Details" id="a7T-Xu-0bZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EzD-Nm-tuk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVK-ck-hLY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614" y="56"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgNoFavouriteGiphy" width="398" height="491"/>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightGrey">
+            <color red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,63 @@
+/* 
+  English.strings
+  Giphy
+*/
+
+
+/*---------------------
+ // MARK: - APIManager message(s)
+------------------------*/
+"~Unknown error happend" = "Unknown error happend";
+"~Your internet connection seems to be down." = "Your internet connection seems to be down.";
+
+/*---------------------
+ // MARK: - Date&Time String(s)
+------------------------*/
+"~Years ago" = " Years ago";
+"~Year ago" = " Year ago";
+"~Last year" = " Last year";
+"~Months ago" = " Months ago";
+"~Month ago" = " Month ago";
+"~Last month" = " Last month";
+"~Weeks ago" = " Weeks ago";
+"~Week ago" = " Week ago";
+"~Last week" = " Last week";
+"~Days ago" = " Days ago";
+"~Day ago" = " Day ago";
+"~Last day" = " Last day";
+"~Hours ago" = " Hours ago";
+"~Hour ago" = " Hour ago";
+"~Last hour" = " Last hour";
+"~Minutes ago" = " Minutes ago";
+"~Minute ago" = " Minute ago";
+"~Last minute" = " Last minute";
+"~Seconds ago" = " Seconds ago";
+"~Just now" = " Just now";
+
+
+/*---------------------
+ // MARK: - TabBar String(s)
+------------------------*/
+"~Trending" = "Trending";
+"~Favourite" = "Favourite";
+"~Share" = "Share";
+"~Add to Favourite" = "Add to Favourite";
+"~Remove from Favourite" = "Remove from Favourite";
+
+
+/*---------------------
+ // MARK: - FeedTab String(s)
+------------------------*/
+"~Search in giphies" = "Search in giphies";
+"~Searching for" = "Searching for : \"";
+"~Author: " = "Author: ";
+
+
+/*---------------------
+ // MARK: - FavouriteTab String(s)
+------------------------*/
+"~Favourite Gihpies" = "Favourite Gihpies";
+"~You don’t have any Favourite Giphies" = "You don’t have any Favourite Giphies";
+"~Are you sure to remove your favourite giphy from your list?" = "Are you sure to remove your favourite giphy from your list?";
+"~Remove" = "Remove";
+"~Cancel" = "Cancel";

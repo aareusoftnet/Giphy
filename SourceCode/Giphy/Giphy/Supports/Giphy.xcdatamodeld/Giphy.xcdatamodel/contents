@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="GiphyCDM" representedClassName=".GiphyCDM" syncable="YES">
+        <attribute name="authorName" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="index" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isFavourite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="trendingOn" optional="YES" attributeType="String"/>
+        <relationship name="original" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="GiphyImageSizeCDM"/>
+        <relationship name="small" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="GiphyImageSizeCDM"/>
+    </entity>
+    <entity name="GiphyImageSizeCDM" representedClassName=".GiphyImageSizeCDM" syncable="YES">
+        <attribute name="frames" optional="YES" attributeType="String"/>
+        <attribute name="hashh" optional="YES" attributeType="String"/>
+        <attribute name="height" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="mp4" optional="YES" attributeType="String"/>
+        <attribute name="mp4Size" optional="YES" attributeType="String"/>
+        <attribute name="size" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <attribute name="webp" optional="YES" attributeType="String"/>
+        <attribute name="webpSize" optional="YES" attributeType="String"/>
+        <attribute name="width" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="GiphyCDM" positionX="0" positionY="0" width="128" height="164"/>
+        <element name="GiphyImageSizeCDM" positionX="0" positionY="0" width="128" height="194"/>
+    </elements>
+</model>

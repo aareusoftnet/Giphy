@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="os0-ML-hKO" userLabel="View Top">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="331"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3Y-dw-U33" userLabel="View Bottom">
+                                <rect key="frame" x="0.0" y="565" width="414" height="331"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="imgSplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="nCx-Kw-6uL">
+                                <rect key="frame" x="0.0" y="331" width="414" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nCx-Kw-6uL" secondAttribute="height" multiplier="23:13" id="Q9L-nU-20J"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="black"/>
+                        <constraints>
+                            <constraint firstItem="os0-ML-hKO" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="CeB-kq-D2J"/>
+                            <constraint firstItem="U3Y-dw-U33" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.36942" id="FEl-SW-y9r"/>
+                            <constraint firstItem="os0-ML-hKO" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.36942" id="Il2-sH-ItX"/>
+                            <constraint firstItem="U3Y-dw-U33" firstAttribute="top" secondItem="nCx-Kw-6uL" secondAttribute="bottom" id="NaR-qr-wnM"/>
+                            <constraint firstItem="U3Y-dw-U33" firstAttribute="leading" secondItem="os0-ML-hKO" secondAttribute="leading" id="Pg0-6E-QCf"/>
+                            <constraint firstItem="os0-ML-hKO" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ReI-xk-JHV"/>
+                            <constraint firstItem="nCx-Kw-6uL" firstAttribute="top" secondItem="os0-ML-hKO" secondAttribute="bottom" id="SSu-dW-93X"/>
+                            <constraint firstAttribute="trailing" secondItem="os0-ML-hKO" secondAttribute="trailing" id="aZZ-y0-Oqc"/>
+                            <constraint firstItem="U3Y-dw-U33" firstAttribute="trailing" secondItem="os0-ML-hKO" secondAttribute="trailing" id="gm3-2m-pqZ"/>
+                            <constraint firstAttribute="bottom" secondItem="U3Y-dw-U33" secondAttribute="bottom" id="w3c-FD-eiK"/>
+                            <constraint firstItem="nCx-Kw-6uL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wAy-6i-6Gk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgSplashLogo" width="414" height="234"/>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
